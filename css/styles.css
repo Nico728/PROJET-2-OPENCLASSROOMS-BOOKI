@@ -1,0 +1,731 @@
+*
+{
+	box-sizing: border-box;
+}
+
+.cadre
+{
+	border: 3px solid red;
+}
+
+@font-face
+{
+	font-family: 'raleway';
+	src: url('/fonts/Raleway-Medium.ttf');
+}
+
+*
+{
+	font-family: 'raleway';
+}
+
+body
+{
+  width: auto;
+  overflow-x: hidden;
+}
+
+
+/************************************************************************************
+************************************ En-tête ****************************************
+*************************************************************************************/
+
+
+#conteneurheader  /************ Encadrement Header*/
+{
+  width: auto;
+  height: auto;
+}
+
+.logobooki
+{
+	margin-left: 40px;
+}
+
+.taillelogobooki
+{
+	width: 95px;
+	height: 50px;
+}
+
+.logomenu
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu      /************ Menu Navigation Header*/
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+  	width: 300px;
+  	padding: 0px;
+  	height: 88px;
+}
+
+.reglageNAV
+{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	padding-top: 33px;
+	padding-bottom: 34px;
+}
+
+.soulignement   /************ Retrait des soulignement cliquable*/
+{
+  text-decoration: none;
+  color: black;
+}
+
+.survolTop:hover    /************ Changement d'apparance lors du survol*/
+{
+	border-top: 3px solid #0065FC;
+}
+
+.survolcouleur:hover
+{
+	color: #0065FC;
+}
+
+
+/************************************************************************************
+************************************ Section Recherche ******************************
+*************************************************************************************/
+
+
+.sectionRECHERCHE
+{
+	width: 100%;
+	height: auto;
+	margin-left: 20px;
+}
+
+h1       /*************** Réglage titre formulaire */
+{
+	font-size: 20px;
+	font-weight: bolder;
+	margin-left: 10px;
+}
+
+.sous_titre      /*************** Réglage sous-titre formulaire */
+{
+	margin-left: 10px;
+	margin-top: -5px;
+    margin-bottom: 4px
+}
+
+.logolocalisation  /*************** Réglage logo localisation formulaire */
+{
+	background-color: #F2F2F2;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#localisationcouleur  /*************** Réglage couleur logo localisation formulaire */
+{
+	color: black;
+}
+
+input::placeholder  /*************** Réglage mot intérieur barre de recherche formulaire */
+{
+	font-weight: bold;
+	color: black;
+}
+
+.Recherche   /*************** Encadrement barre recherche formulaire */
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 10px;
+}
+
+input     /*************** Réglage barre de recherche formulaire */
+{
+	width: 230px;
+	height: 50px;
+	border-top: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+	border-right: 1px solid #0065FC;
+	border-left: 1px solid #F2F2F2;
+}
+
+.loupe /*************** Réglage logo loupe formulaire */
+{
+	visibility: visible;
+	background-color: #0065FC;
+	height: 50px;
+	width: 50px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.button  /*************** Réglage bouton recherche formulaire */
+{
+	background-color: #0065FC;
+	color: white;
+	border: 1px solid #0065FC;
+	width: 140px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.abouton  /*************** Réglage couleur et hauteur bouton recherche formulaire */
+{
+	color: white;
+	text-align: center;
+	margin-right: 0px;
+	font-weight: bold;
+}
+
+/************************************************************************************
+************************************ Filtres ****************************************
+*************************************************************************************/
+
+.Filtres /*************** Encadrement filtres */
+{
+	margin-left: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 18px;
+}
+
+.Groupefiltres
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-left: 17px;
+}
+
+.titrefiltres /*************** Réglage titre filtres */
+{
+	font-size: 18px;
+}
+
+.filtresli /****************** Réglage des filtres */
+{
+	margin-left: 20px;
+	margin-right: 9px;
+	padding-right: 20px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: 2px solid #DEEBFF;
+	border-top: 2px solid #D9D9D9;
+	border-right: 2px solid #D9D9D9;
+	border-bottom: 2px solid #D9D9D9;
+	border-radius: 25px;
+}
+
+.alogo    /************* Placement des logo filtres */
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.textefiltres /*********** Police filtres */
+{
+	font-weight: bold;
+}
+
+
+.logofiltres  /******** Réglage des logos filtres */
+{
+	background-color: #DEEBFF;
+	border: 0px solid #DEEBFF;
+	border-radius: 100%;
+	height: 50px;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	margin-left: -2px;
+	font-size: 15px;
+}
+
+.filtresli:hover   /************ Changement d'apparence au survol des filtres */
+{
+	background-color: #D9D9D9;
+}
+
+i   /***************** Couleur logo filtre */
+{
+	color: #0065FC;
+}
+
+/************************************************** Info */
+
+.info   /******** Encadrement info sous les filtres */
+{
+	margin-left: 10px;
+	margin-top: 40px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.logoinfo  /************ Réglage logo info */
+{
+	margin-right: 10px;
+	border: 0.5px solid #D9D9D9;
+	width: 22px;
+	height: 22px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+}
+
+
+/************************************************************************************
+************************************ Section Hébergements ***************************
+*************************************************************************************/
+
+
+.titrevide
+{
+	display: none;
+}
+
+.survolimgH:hover
+{
+	box-shadow: 5px 5px 5px 1px #0065FC;
+}
+
+.articleaside    /****************** Encadrement Article et Aside*/
+{
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 10px;
+	margin-left: 10px;
+	width: 99%;
+	height: 100%;
+}
+
+.basiqueH       /****************** Encadrement Article*/
+{
+	background-color: #F2F2F2;
+	padding: 0%;
+	border-radius: 20px;
+	width: 66%;
+	height: auto;
+	margin: 0%;
+	padding-bottom: 20px;
+}
+
+.titrehebergement
+{
+	margin-left: 4%;
+	margin-top: 5%;
+	margin-bottom: -2%;
+	padding: 0%;
+	font-size: 21px;
+}
+
+.photohebergement  /****************** Encadrement DES Annonce Hébergement*/
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	margin: 2.5%;
+	padding: 0%;
+}
+
+.cadrehebergement   /****************** Encadrement D'UNE Annonce Hébergement*/
+{
+	margin-top: 20px;
+	background-color: white;
+	border: 5px solid white;
+	border-radius: 20px;
+	height: 200px;
+	width: 30%;
+}
+
+.arrondimg   /****************** Arrondi photo*/
+{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	overflow: hidden;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.descriptionH  /****************** Description Annonce Hébergement*/
+{
+	background-color: white;
+	background-size: cover;
+	border: 4px solid white;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	width: 100%;
+	height: 0%;
+}
+
+.taillepoliceH  /****************** Taille police Annonce Hébergement*/
+{
+	font-size: 13px;
+}
+
+.tailleIMGH   /************* Taille image Hébergements */
+{
+	width: 100%;
+	height: 111px;
+}
+
+.reglagedescriptionH  /****************** Réglage Titre et Sous-titre Annonce Hébergement*/
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.etoilereglage   /****************** Réglage note étoile Annonce Hébergement*/
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 5px;
+	padding: 0;
+}
+
+.moinsetoiles   /****************** Couleur étoile en moins Annonce Hébergement*/
+{
+	color: #D9D9D9;
+}
+
+
+.Afficherplus    /****************** Afficher plus Annonce Hébergement*/
+{
+	font-weight: bold;
+}
+
+.Reglageafficherplus
+{
+	margin:4%;
+}
+
+
+.basiquePop     /****************** Encadrement Aside*/
+{
+	background-color: #F2F2F2;
+	padding: 0%;
+	border-radius: 20px;
+	width: 31.1%;
+	height: auto;
+	margin: 0%
+}
+
+.titreaside     /************* Réglage titre les plus pop Aside */
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin-left: 10%;
+	margin-top: 6%;
+	margin-bottom: -2%;
+	padding: 0%;
+	font-size: 14px;
+}
+
+.étoilepopulaire        /************* Réglage logo étoile populaire */
+{
+	color: black;
+	margin-right: 40px;
+	font-size: 20px;
+}
+
+.photopopulairesgroupe     /****************** Encadrement Des Annonces Populaires */
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 0%;
+	width: 100%;
+}
+
+.cadrepopulaires     /****************** Encadrement D'UNE Annonce Populaire */
+{
+	margin-top: 20px;
+	margin-bottom: 15px;
+	background-color: white;
+	border: 5px solid white;
+	border-radius: 20px;
+	width: 344px;
+	height: 140px;
+	display: flex;
+	align-items: center;
+}
+
+.arrondipop    /****************** Arrondi et réglages photo*/
+{
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.tailleIMGPOP   /************* Taille image Populaire */
+{
+	width: 130px;
+	height: 130px;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+.descriptionPOP
+{
+	margin-left: 20px;
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.TitrePOP
+{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	font-size: 16px;
+	margin-top: 2px;
+}
+
+.soustitrePOP
+{
+	margin-bottom: 25px;
+	margin-top: 7px;
+	font-size: 12px;
+}
+
+.taillepolicePOP  /****************** Taille police Annonce Populaire*/
+{
+	font-size: 13px;
+}
+
+.etoilereglagepop   /****************** Réglage note étoile Annonce Populaire*/
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 15px;
+	margin-bottom: -5px;
+	padding: 0;
+	font-size: 11px;
+}
+
+.moinsetoilespop   /****************** Couleur étoile en moins Annonce Populaire*/
+{
+	color: #D9D9D9;
+}
+
+.survolimgPOP:hover
+{
+	box-shadow: 5px 5px 5px 1px #0065FC;
+}
+
+
+/************************************************************************************
+************************************ Section Activités ******************************
+*************************************************************************************/
+
+
+.sectionactivites   /************ Section Activités */
+{
+	
+	height: auto;
+	margin-right: 10px;
+	margin-left: 20px;
+	padding: 0%;
+}
+
+.Titresectionact
+{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.groupeactivites   /************ Ensemble des Activités */
+{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.Activites1et4      /************ Réglages Activité Vieux Port */ 
+{
+	width: 22.5%;
+	height: 450px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #F2F2F2;
+}
+
+.imgcentre
+{
+	overflow: hidden;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.imgact1et4       /************ Réglages image Vieux Port */
+{
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.titreactivites   /*********** Titre de l'Activité */
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-weight: bold;
+	font-size: 13px;
+	margin-left: 20px;
+}
+
+.Activites2-3et5-6    /********* Groupe Activités POMEGUE ET FRIOUL */
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 22.5%;
+	height: 450px;
+}
+
+.Activites2    /************ Réglages Activité POMEGUE */
+{
+	width: 100%;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #F2F2F2;
+}
+
+.imgact2    /************ Réglages image POMEGUE */
+{
+	width: 100%;
+	height: 190px;
+	overflow: hidden;
+	object-fit: cover;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.Activites3  /************ Réglages Activité FRIOUL */
+{
+	width: 100%;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #F2F2F2;
+}
+
+.imgact3   /************ Réglages image FRIOUL */
+{
+	width: 100%;
+	height: 120px;
+	overflow: hidden;
+	object-fit: cover;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.imgact5   /************ Réglages image Notre-dame-de-la-garde */
+{
+	width: 100%;
+	height: 145px;
+	overflow: hidden;
+	object-fit: cover;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.Activites5   /************ Réglages Activité Notre-dame-de-la-garde */
+{
+	width: 100%;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #F2F2F2;
+	margin-bottom: 30px;
+}
+
+.Activites6  /************ Réglages Activité Longchamp */
+{
+	width: 100%;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #F2F2F2;
+}
+
+.imgact6   /************ Réglages image Longchamp */
+{
+	width: 100%;
+	height: 160px;
+	overflow: hidden;
+	object-fit: cover;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.survolimgACT:hover
+{
+	box-shadow: 5px 5px 5px 1px #0065FC;
+}
+
+
+/************************************************************************************
+************************************ Footer *****************************************
+*************************************************************************************/
+
+
+#conteneurfooteur
+{
+	display: flex;
+	background-color: #F2F2F2;
+	width: 100%;
+}
+
+.propos
+{
+	margin-left: 20px;
+}
+
+.charte
+{
+	margin: 0px 150px 0px 150px;
+}
+
+h3
+{
+	font-weight: bold;
+}
+
+.survolFOOTER:hover
+{
+	color: #0065FC;
+}
